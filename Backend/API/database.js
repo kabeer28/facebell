@@ -18,7 +18,7 @@ async function connect() {
 async function query(query,params = []) {
     const con = await connect();
     let [results, fields] = await con.execute(query, params);
-    con.end();
+    await con.end();
 
     return results;
 }
