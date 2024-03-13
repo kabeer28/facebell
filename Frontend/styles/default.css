@@ -1,0 +1,103 @@
+﻿html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+* {
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    font-family: Helvetica, sans-serif;
+}
+
+.image-holder {
+    width: 25%;
+    height: 703px;
+    background-color: transparent;
+    display: inline-block;
+}
+
+.image1 {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.login {
+    vertical-align: top;
+    width: 74.7%;
+    height: 703px;
+    background-color: transparent;
+    display: inline-block;
+}
+
+.header-holder {
+    width: 50%;
+    margin: auto;
+    background-color: transparent;
+    text-align: center;
+    margin-top: 140px;
+}
+
+.input-holder {
+    width: 50%;
+    margin: auto;
+    background-color: transparent;
+    margin-top: 75px;
+}
+
+.textbox {
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    width: 400px;
+    height: 25px;
+    border-radius: 5px;
+    border: 2px solid #03487c;
+    padding: 5px;
+}
+
+    .textbox:hover, .textbox:focus {
+        border: 3px solid #03487c;
+    }
+
+.button-holder {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.button {
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(3, 72, 124, 0.8);
+    color: white;
+    font-weight: 700;
+}
+
+    .button:hover {
+        background-color: white;
+        color: black;
+        border: 2px solid #03487c;
+    }
+
+.checkbox-holder {
+    width: 400px;
+    margin: auto;
+    background-color: transparent;
+    margin-top: 20px;
+    font-size:15px;
+}
+
+.checkbox {
+    margin: auto;
+    margin-top: 15px;
+}
