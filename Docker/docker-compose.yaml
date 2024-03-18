@@ -1,5 +1,5 @@
 services:
-  db:
+  postgres:
     image: postgres
     restart: always
     ports:
@@ -9,7 +9,4 @@ services:
       POSTGRES_USER: root
       POSTGRES_DB: facebell
     volumes:
-      - pgdata:/var/lib/postgresql/data
-
-volumes:
-  pgdata: 
+      - ~/apps/postgres:/var/lib/postgresql/data
