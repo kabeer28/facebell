@@ -1,7 +1,7 @@
 import requests
 import time
 import random
-#from picamera import PiCamera
+from picamera import PiCamera
 from pathlib import Path
 
 #initalize camera
