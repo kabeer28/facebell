@@ -1,12 +1,13 @@
+version: '3.9'
+
 services:
   postgres:
     image: postgres
-    restart: always
     ports:
       - 3306:3306
-    environment:
-      POSTGRES_PASSWORD: password
-      POSTGRES_USER: root
-      POSTGRES_DB: facebell
     volumes:
       - ~/apps/postgres:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=S3cret
+      - POSTGRES_USER=citizix_user
+      - POSTGRES_DB=citizix_db
