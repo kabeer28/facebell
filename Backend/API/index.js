@@ -199,4 +199,4 @@ api.get("/v1/account/friend/list", async (req, res) => {
     }
 });
 
-api.listen(3000, () => console.log("API server is running..."));
+api.listen(3000, () => console.log("API server is running on port 3000..."));
