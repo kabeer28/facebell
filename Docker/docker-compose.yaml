@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: root
+      POSTGRES_DB: facebell
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
