@@ -8,7 +8,8 @@ async function connect() {
         host: "localhost",
         port: 3306,
         user: "root",
-        database: "facebell" 
+        password: "password",
+        database: "facebell"
     });
 
     return con;
