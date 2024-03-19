@@ -199,4 +199,9 @@ api.get("/v1/account/friend/list", async (req, res) => {
     }
 });
 
+//Place holder function
+api.post("/v1/detected-face", async (req,res) => {
+    console.log(req.body.path);
+});
+
 api.listen(3000, () => console.log("API server is running on port 3000..."));

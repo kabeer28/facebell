@@ -11,12 +11,12 @@ time.sleep(2)
 #send POST request to API 
 #gives local path to save photo of face to check
 def pass_facial_data(path):
-    #url = 'http://localhost:3000/v1/detected-face'
-    #json = {'path':path}
+    url = 'http://localhost:3000/v1/detected-face'
+    json = {'path':path}
 
-    #x = requests.post(url=url, json=json)
+    x = requests.post(url=url, json=json)
 
-    #print(x.text)
+    print(x.text)
     ...
 
 #handles button callback
