@@ -7,7 +7,7 @@ async function connect() {
     const con = await mysql.createConnection({
         host: "localhost",
         port: 3306,
-        user: "root",
+        user: "username",
         password: "password",
         database: "facebell"
     });
