@@ -1,0 +1,67 @@
+﻿::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(3, 72, 124, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: skyblue;
+    }
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+* {
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    font-family: Helvetica, sans-serif;
+}
+
+.menu{
+    height:100px;
+    width:100%;
+    background-color:cornflowerblue;
+}
+
+.title {
+    width: 200px;
+    height: 100%;
+    background-color: coral;
+    padding: 0.1px;
+    display: inline-block;
+}
+
+.header{
+    width:100%;
+    margin:auto;
+    text-align:center;
+    font-size:25px;
+    margin-top:25px;
+}
+
+.text {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size:15px;
+}
+
+.item-holder {
+    width: calc(100% - 210px);
+    height:100px;
+    background-color:yellow;
+    display:inline-block;
+}

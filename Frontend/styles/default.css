@@ -1,4 +1,24 @@
-﻿html, body {
+﻿::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(3, 72, 124, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: skyblue;
+    }
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -11,7 +31,7 @@
 }
 
 .image-holder {
-    width: 25%;
+    width: 350px;
     height: 703px;
     background-color: transparent;
     display: inline-block;
@@ -26,8 +46,8 @@
 
 .login {
     vertical-align: top;
-    width: 74.7%;
-    height: 703px;
+    /*    width: 73%;*/
+    width: calc(100% - 360px);
     background-color: transparent;
     display: inline-block;
 }
@@ -37,7 +57,7 @@
     margin: auto;
     background-color: transparent;
     text-align: center;
-    margin-top: 140px;
+    margin-top: 120px;
 }
 
 .input-holder {
@@ -51,16 +71,12 @@
     display: block;
     margin: auto;
     margin-top: 15px;
-    width: 400px;
+    width: 70%;
     height: 25px;
-    border-radius: 5px;
-    border: 2px solid #03487c;
-    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid #03487c;
+    padding: 10px;
 }
-
-    .textbox:hover, .textbox:focus {
-        border: 3px solid #03487c;
-    }
 
 .button-holder {
     width: 50%;
@@ -75,12 +91,16 @@
 .button {
     width: 150px;
     height: 35px;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     border: none;
     background-color: rgba(3, 72, 124, 0.8);
     color: white;
     font-weight: 700;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
 }
 
     .button:hover {
@@ -90,7 +110,7 @@
     }
 
 .checkbox-holder {
-    width: 400px;
+    width: 50%;
     margin: auto;
     background-color: transparent;
     margin-top: 20px;
@@ -98,6 +118,44 @@
 }
 
 .checkbox {
-    margin: auto;
+    margin-left:15%;
     margin-top: 15px;
+}
+
+label{
+    font-size:11px;
+}
+
+.text {
+    color: rgba(3, 72, 124, 0.8);
+}
+
+@media(max-width:1150px) {
+
+    .header-holder{
+        font-size:15px;
+    }
+
+    label{
+        font-size:6px;
+    }
+
+    .textbox{
+        height:20px;
+    }
+}
+
+@media(max-width:700px) {
+    .image-holder{
+        display:none;
+    }
+
+    .login{
+        width:100%;
+        margin:auto;
+    }
+
+    label{
+        font-size:11px;
+    }
 }
