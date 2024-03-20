@@ -205,7 +205,7 @@ api.post("/v1/detected-face", async (req,res) => {
         console.log(req.body.path);
         
         return res.sendStatus(200);
-    } catch (err) {
+    } catch (err) { 
         console.log(err);
         return res.sendStatus(500);
     }
