@@ -19,7 +19,7 @@
             <div class="login">
 
                 <div class="header-holder">
-                    <h1>Hello! Let's get started</h1>
+                    <h1 class="text">LET'S GET STARTED!</h1>
                 </div>
 
                 <div class="input-holder">
@@ -30,13 +30,13 @@
 
                 <div class="checkbox-holder">
                     <input class="checkbox" type="checkbox" id="agree"/>
-                    <label for="accept">I READ AND AGREE TO THE TERMS AND SERVICES</label><br />
+                    <label class="text" for="accept">I READ AND AGREE TO THE TERMS</label><br />
                     <input class="checkbox" type="checkbox" id="optin"/>
-                    <label for="optin">OPT IN FOR EMAIL UPDATES</label><br />
+                    <label class="text" for="optin">OPT IN FOR EMAIL UPDATES</label><br />
                 </div>
 
                 <div class="button-holder">
-                    <input class="button" type="button" value="SIGN UP" />
+                    <a class="button" href="dashboard.aspx">SIGN UP</a>
                 </div>
 
             </div>
